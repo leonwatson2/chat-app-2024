@@ -39,7 +39,6 @@ export const Layout = () => {
    *	Initializes socket event callbacks
    */
   useEffect(() => {
-    console.log({ socket });
     if (socket) {
       socket.on('connect', reconnectUserInfo);
       if (user) {

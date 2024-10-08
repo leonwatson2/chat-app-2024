@@ -24,7 +24,6 @@ const LoginForm = ({ socket, setUser }) => {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-    console.log('handleSubmit');
 		socket.emit(CONSTANTS.VERIFY_USER, nickname, (response) => {
 			if (!response.isUser) {
 				setUser(response);

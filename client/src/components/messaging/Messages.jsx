@@ -27,7 +27,8 @@ const Messages = ({ messages, user, typingUsers }) => {
 				}
 				{
 					typingUsers && typingUsers.map((name) => {
-						return (
+						if(name === user.name) return null;
+            return (
 							<div key={name} className="typing-user">
 								{`${name} is typing . . .`}
 							</div>
