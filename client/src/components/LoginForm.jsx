@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import PropTypes from 'prop-types';
-import { CONSTANTS } from '../../../shared/Constants';
+import { CONSTANTS } from '../Constants';
 
 const randomPlaceholder = () => {
 	const randNames = [

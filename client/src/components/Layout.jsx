@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import LoginForm from './LoginForm';
 import ChatContainer from './chat/ChatContainer';
-import { CONSTANTS } from '../../../shared/Constants';
+import { CONSTANTS } from '../Constants';
 import io from 'socket.io-client';
 
 const serverURI = import.meta.env.VITE_SERVER_URL;

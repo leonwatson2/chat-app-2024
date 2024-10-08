@@ -3,7 +3,7 @@ import SideBar from './SideBar';
 import Messages from '../messaging/Messages';
 import MessageInput from '../messaging/MessageInput';
 import ChatHeading from './ChatHeading';
-import { CONSTANTS } from '../../../../shared/Constants';
+import { CONSTANTS } from '../../Constants';
 
 const ChatContainer = ({
   socket,
