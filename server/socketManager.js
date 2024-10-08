@@ -1,7 +1,7 @@
 import { io } from './server.js'
 import {
   CONSTANTS
-} from '../shared/Constants.js';
+} from './Constants.js';
 import { createUser, createChat, createMessage } from './Classes.js'
 
 const {
