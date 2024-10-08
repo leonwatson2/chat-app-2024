@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js",
-    "heroku-postbuild": "cd .. && npm install --prefix server && npm run build --prefix server"
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
