@@ -39,6 +39,7 @@ export const Layout = () => {
    *	Initializes socket event callbacks
    */
   useEffect(() => {
+    console.log({ socket });
     if (socket) {
       socket.on('connect', reconnectUserInfo);
       if (user) {
@@ -53,7 +54,7 @@ export const Layout = () => {
   }, [socket, reconnectUserInfo, handleSetUser, user]);
 
   useEffect(() => {
-    const newSocket = io(serverURI);
+    const newSocket = io(serverURI, { transports: ['websocket'] });
     setSocket(newSocket);
 
     return () => {
